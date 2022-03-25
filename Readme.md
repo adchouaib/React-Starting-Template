@@ -1,6 +1,7 @@
 A self made React starting template for my projects.
 
 elements used to build it : 
+
     - ViteJs 
     - SCSS
     - React-Component-Generator

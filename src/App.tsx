@@ -1,10 +1,14 @@
-import React from 'react'
 import AppContainer from './components/Container/Container'
 
 //import redux tools
 import { Provider } from 'react-redux'
 import { configureStore } from './redux/configureStore'
 
+//import react Router
+import { BrowserRouter } from 'react-router-dom';
+
+//importing scss file
+import './App.scss';
 
 //store initialisation
 const store = configureStore();
@@ -12,7 +16,9 @@ const store = configureStore();
 function App() {
   return (
     <Provider store={store}>
-      <AppContainer />
+      <BrowserRouter>
+        <AppContainer />
+      </BrowserRouter>
     </Provider>
   )
 }
